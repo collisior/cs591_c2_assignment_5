@@ -13,7 +13,7 @@ class FirstMissingPositiveIntegerTest {
 	}
 
 	@Test
-	void testAllPositiveNums() {
+	void testAllNonNegativeNums() {
 		int[] nums = {1,2,0};
 
 		Assertions.assertEquals(3, FirstMissingPositiveInteger.firstMissingPositiveInteger(nums));
