@@ -12,7 +12,7 @@ public class FirstMissingPositiveInteger {
 		}
 		
 		int min =1;
-		while (true) {
+		while (true) {//assumes input does not contain numbers that exceed the maximum value for an integer in java
 			if (!h.containsKey(min)) {
 				return min;
 			}
