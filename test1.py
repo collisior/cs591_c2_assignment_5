@@ -1,5 +1,5 @@
 import unittest
-from urlSplitting import *
+from part1 import *
 
 class TestURLSplitting(unittest.TestCase):
 
