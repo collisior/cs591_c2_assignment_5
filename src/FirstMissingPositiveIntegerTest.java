@@ -11,6 +11,13 @@ class FirstMissingPositiveIntegerTest {
 	@BeforeEach
 	void setUp() throws Exception {
 	}
+	
+	@Test
+	void testAllPositiveNums() {
+		int[] nums = {1,2,1,10};
+
+		Assertions.assertEquals(3, FirstMissingPositiveInteger.firstMissingPositiveInteger(nums));
+	}
 
 	@Test
 	void testAllNonNegativeNums() {
