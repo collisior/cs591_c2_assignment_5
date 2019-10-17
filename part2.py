@@ -1,10 +1,12 @@
 import math as math
 
 class shapeCalculator:
-    def askUser():
+    def __init__(self): pass
+
+    def askUser(self):
         return 'Choose a shape: (C)ircle or (R)ectangle or (S)quare'
     
-    def whichShape(input):
+    def whichShape(self, input):
         s = ''
         if input == "R":
             s = "Rectangle"
@@ -14,7 +16,7 @@ class shapeCalculator:
             s = "Square"
         return s
     
-    def getQuest(input):
+    def getQuest(self, input):
         s = ''
         if input == "R":
             s = "Rectangle length?"+"Rectangle Breadth?"
@@ -24,11 +26,11 @@ class shapeCalculator:
             s = "Square Breadth?"
         return s
     
-    def getRectMeasure(height, width):
+    def getRectMeasure(self, height, width):
         return height*width
     
-    def getCircletMeasure(circumference):
+    def getCircletMeasure(self, circumference):
         return math.pi*math.pow(circumference/2, 2)
     
-    def getSquareMeasure(height):
+    def getSquareMeasure(self, height):
         return math.pow(height, 2)
