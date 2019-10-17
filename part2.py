@@ -1,6 +1,6 @@
-import math as math
+import math 
 
-class shapeCalculator:
+class ShapeCalculator():
     def __init__(self): pass
 
     def askUser(self):
